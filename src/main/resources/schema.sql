@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS Prices;
+
+
+
+CREATE TABLE Prices (
+    id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    brandId BIGINT NOT NULL,
+    startDate DATETIME NOT NULL,
+    endDate DATETIME NOT NULL,
+    priceList BIGINT NOT NULL,
+    productId BIGINT NOT NULL,
+    priority INT NOT NULL,
+    price DOUBLE NOT NULL,
+    curr VARCHAR(5) NOT NULL
+);
+
+
+
+
